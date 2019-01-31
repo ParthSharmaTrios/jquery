@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+	<title> Learing JQuery </title>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	<script>
+	
+		$(document).ready(function () {
+		
+		
+			$('#submitBtn').click(function(){
+			
+					var fname = $('#first_name').val();
+					var lame = $('#last_name').val();
+					
+					console.log(fname);
+						
+					
+					if(fname=="" || lname==""){
+						alert("Invalid data !! ");
+					}
+			
+			
+			});
+		
+		
+		
+		});
+	</script>
+
+</head>
+
+
+<body>
+
+
+	<form>
+	
+		First Name : <input type="text" id="first_name"> <br><br>
+		
+		Last Name : <input type="text" id="last_name"> <br><br>
+		
+		<input type="submit" id="submitBtn" >
+	
+	</form>
+
+</body>
+
+</html>
