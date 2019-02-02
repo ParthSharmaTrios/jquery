@@ -1,4 +1,4 @@
- <html>
+<html>
 
 <head>
 
@@ -6,45 +6,42 @@
 	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
 	
+	<script>
 	
-	<style>
-		.error{
-			color:red;
-		}
-	
-	</style>
-	
-	<script>	
-		$(document).ready(function () {	
+		$(document).ready(function () {
 		
-			$('#form').validate({
+		
+			$('#form1').validate({
 				rules:{
-				
 					first_name:{
 						required:true,
-						minlength:5,
-												
+						minlength:5
 					
 					},
 					
 					last_name:{
 						required:true,
-					}
-				
-				},
-				
-				submitHandler: function(form){
-					alert('data received');
+						minlength:3
 					
-					return false;
+					},
+					
+				}	,
+					 submitHandler: function (form) { // for demo
+            alert('valid form submitted'); // for demo
+            //return false; // for demo
+        }
+					
 				
-				}
+				
+			
+			
 			
 			})
 		
-			
+		
 		
 		});
 	</script>
@@ -54,9 +51,8 @@
 
 <body>
 
-	<p id="errors"> </p>
 
-	<form id="form">
+	<form id="form1">
 	
 		First Name : <input type="text" name="first_name"> <br><br>
 		
