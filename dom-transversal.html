@@ -22,6 +22,23 @@
 	
 	</style>
 	
+		
+	<script>
+	
+	
+	$(document).ready(function(){
+		
+			//var result = $('#animals  .creature');
+			
+			
+			var result = $('#animals').find('.creature').children();
+			
+			console.log(result);
+			
+		});
+	
+	</script>
+	
 </head>
 
 <body>
@@ -46,11 +63,14 @@
 			<div class="pets" id="cat"> Lizards </div>
 			
 			
-			<div class="wild"> Crocodile </div>
+			<div class="wild creature"> Crocodile </div>
+			
+			
+			
 		
 		</div>
 	
-	
+		<div class="marine"> Marine Animals </div>
 	</div>
 
 
